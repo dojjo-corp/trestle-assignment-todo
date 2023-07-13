@@ -6,14 +6,18 @@
 :root {
   --dark-color-text: #fff;
   --dark-bgcolor: #;
+  --dark-bg-image: "images/bg-desktop-dark.jpg";
   --light-color-text: #;
-  --light-bgcolor: #;
+  --light-bgcolor: hsl(0, 0%, 98%);
+  --light-bg-image: "images/bg-desktop-light.jpg";
   --color-text-inactive: #;
+
 
 }
 body {
-  background-image: url("images/bg-desktop-light.jpg");
-  background-color: hsl(0, 0%, 98%);
+  background-image: url(var(--light-bg-image));
+  background-color: var(--light-bgcolor);
+  background-repeat: no-repeat;
   font-family: "Josefin Sans";
   font-size: normal;
   display: flex;
@@ -35,6 +39,7 @@ header {
   margin-bottom: 30px;
 }
 h1 {
+  color: #fff;
   letter-spacing: 10px;
 }
 div.item-container{
