@@ -12,6 +12,8 @@
   --light-bg-image: url("images/bg-desktop-light.jpg");
   --color-text-inactive: hsl(236, 33%, 92%);
   --color-text-inactive-bold: hsl(233, 11%, 84%);
+  --mobile-dark-bg-image: url("images/bg-mobile-dark.jpg");
+  --mobile-light-bg-image: url("images/bg-mobile-light.jpg")
 }
 .hidden {
   display: none;
@@ -94,4 +96,15 @@ input[type="text"]:active, input[type="text"]:focus {
   cursor: pointer;
   color: var(--color-text-inactive-bold);
   font-weight: bold;
+}
+
+/* MOBILE SCREENS*/
+@media (max-width: 375px) {
+  body {
+    background-image: var(--bg-mobile-light);
+    font-size: 1rem;
+  }
+  main{
+    width: 340px;
+  }
 }
