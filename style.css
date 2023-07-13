@@ -11,7 +11,7 @@
   --light-bgcolor: hsl(0, 0%, 98%);
   --light-bg-image: url("images/bg-desktop-light.jpg");
   --color-text-inactive: hsl(236, 33%, 92%);
-
+  --color-text-inactive-bold: hsl(233, 11%, 84%);
 }
 .hidden {
   display: none;
@@ -73,7 +73,7 @@ input[type="text"]:active, input[type="text"]:focus {
   border-radius: 5px;
 }
 .todo-item {
-  border-bottom: 1px solid;
+  border-bottom: 1px solid var(--color-text-inactive-bold);
 }
 .todo-item p{
   display: inline;
