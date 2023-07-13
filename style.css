@@ -16,6 +16,9 @@
 .hidden {
   display: none;
 }
+li {
+  list-style: none;
+}
 body {
   background-image: var(--light-bg-image);
   background-color: var(--light-bgcolor);
