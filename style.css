@@ -83,7 +83,7 @@ input[type="text"]:active, input[type="text"]:focus {
   justify-content: space-between;
 }
 .remainder {
-  color: var(--color-text-inactive);
+  color: var(--color-text-inactive-bold);
 }
 .filter-links {
   display: flex;
@@ -92,6 +92,6 @@ input[type="text"]:active, input[type="text"]:focus {
 }
 .link-text {
   cursor: pointer;
-  color: var(--color-text-inactive);
+  color: var(--color-text-inactive-bold);
   font-weight: bold;
 }
