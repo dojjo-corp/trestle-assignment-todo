@@ -6,16 +6,18 @@
 :root {
   --dark-color-text: #fff;
   --dark-bgcolor: #;
-  --dark-bg-image: "images/bg-desktop-dark.jpg";
+  --dark-bg-image: url("images/bg-desktop-dark.jpg");
   --light-color-text: #;
   --light-bgcolor: hsl(0, 0%, 98%);
-  --light-bg-image: "images/bg-desktop-light.jpg";
+  --light-bg-image: url("images/bg-desktop-light.jpg");
   --color-text-inactive: #;
 
-
+}
+.hidden {
+  display: none;
 }
 body {
-  background-image: url(var(--light-bg-image));
+  background-image: var(--light-bg-image);
   background-color: var(--light-bgcolor);
   background-repeat: no-repeat;
   background-size: contain;
