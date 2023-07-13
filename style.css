@@ -10,7 +10,7 @@
   --light-color-text: #;
   --light-bgcolor: hsl(0, 0%, 98%);
   --light-bg-image: url("images/bg-desktop-light.jpg");
-  --color-text-inactive: #;
+  --color-text-inactive: hsl(236, 33%, 92%);
 
 }
 .hidden {
@@ -56,7 +56,7 @@ input[type="checkbox"] {
   border-radius: 100%;
 }
 input[type="text"]{
-  height: 40px;
+  height: 100%;
   border: 0;
 }
 input[type="text"]:active, input[type="text"]:focus {
@@ -69,9 +69,15 @@ input[type="text"]:active, input[type="text"]:focus {
   margin: 40px 0;
   border-radius: 5px;
 }
+.todo-item p{
+  display: inline;
+}
 .todo-footer {
   display: flex;
   justify-content: space-between;
+}
+.remainder {
+  color: var(--color-text-inactive);
 }
 .filter-links {
   display: flex;
