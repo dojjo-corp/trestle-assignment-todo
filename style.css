@@ -5,7 +5,8 @@
 }
 :root {
   --dark-color-text: #fff;
-  --dark-bgcolor: #;
+  --dark-bgcolor: hsl(235, 21%, 11%);
+  --dark-bgcolor-faded: hsl(235, 24%, 19%);
   --dark-bg-image: url("images/bg-desktop-dark.jpg");
   --light-color-text: #;
   --light-bgcolor: hsl(0, 0%, 98%);
@@ -115,14 +116,36 @@ main p {
   font-weight: bold;
 }
 
+/* DARK THEME */
+body.dark {
+  background-image: var(--dark-bg-image);
+  background-color: var(--dark-bgcolor);
+  color: var(--dark-color-text);
+}
+div.todo-list.dark {
+  background-color: var(--dark-bgcolor-faded);
+}
+div.item-container.dark {
+  background-color: var(--dark-bgcolor-faded)!important;
+}
+#new-todo.dark {
+  background-color: var(--dark-bgcolor-faded);
+}
+
 /* MOBILE SCREENS*/
 @media (max-width: 375px) {
   body {
     background-image: var(--mobile-light-bg-image);
     font-size: 0.7rem;
   }
+  body.dark {
+    background-image: var(--mobile-dark-bg-image);
+  }
   main{
     width: 330px;
+  }
+  #new-todo.dark {
+    color: var(--dark-color-text);
   }
   
 }
