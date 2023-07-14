@@ -23,14 +23,16 @@
     </header>
     <div class="item-container">
       <input type="checkbox" name="" id="" disabled>
-      <input type="text" name="new-todo" id="new-todo" placeholder="Create a new todo">
+      <form id="todo-form">
+        <input type="text" name="new-todo" id="new-todo" placeholder="Create a new todo">
+      </form>
     </div>
-    <div class="todo-list">
-      <ul>
+    <div>
+      <ul class="todo-list">
         <li>
           <div class="">
             <div class="todo-item">
-              <input type="checkbox" name="" id="mark" disabled>
+              <input type="checkbox" name="" id="mark" >
               <span class="check-mark"></span>
               <p>Lorem ipsum dolor sit amet, qui minim</p>
             </div>
@@ -39,7 +41,7 @@
         <li>
           <div class="">
             <div class="todo-item">
-              <input type="checkbox" name="" id="" disabled>
+              <input type="checkbox" name="" id="" >
               <span class="check-mark"></span>
               <p>Lorem ipsum dolor sit amet, qui minim</p>
             </div>
@@ -48,7 +50,7 @@
         <li>
           <div class="">
             <div class="todo-item">
-              <input type="checkbox" name="" id="" disabled>
+              <input type="checkbox" name="" id="" >
               <span class="check-mark"></span>
               <p>Lorem ipsum dolor sit amet, qui minim</p>
             </div>
@@ -57,30 +59,26 @@
         <li>
           <div class="">
             <div class="todo-item">
-              <input type="checkbox" name="" id="" disabled>
+              <input type="checkbox" name="" id="" >
               <span class="check-mark"></span>
               <p>Lorem ipsum dolor sit amet, qui minim</p>
             </div>
           </div>
         </li>
       </ul>
-      <div class="todo-footer">
-        <span class="remainder"><!-- Add dynamic number --> <span class="remainder-no">5</span> items left</span>
-        <div class="filter-links">
-          <span class="link-text" id="all">All</span>
-          <span class="link-text" id="active">Active</span>
-          <span class="link-text" id="completed">Completed</span>
-        </div>
-        <span class="link-text" id="clear-completed">Clear Completed</span>
+    </div>
+    <div class="todo-footer">
+      <span class="remainder"><!-- Add dynamic number --> <span class="remainder-no">5</span> items left</span>
+      <div class="filter-links">
+        <span class="link-text" id="all">All</span>
+        <span class="link-text" id="active">Active</span>
+        <span class="link-text" id="completed">Completed</span>
       </div>
+      <span class="link-text" id="clear-completed">Clear Completed</span>
     </div>
     <p>Drag and drop to reorder list</p>
   </main>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
   <script src="script.js"></script>
 </body>
 </html>
